@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "The best sorting algorithm in the world",
   "main": "index.js",
+  "module": "dist/index.js",
   "type": "module",
   "repository": {
     "type": "git",
