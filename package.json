@@ -1,5 +1,5 @@
 {
-  "name": "stalin-sort",
+  "name": "@boot_scrap_van/stalin-sort",
   "version": "0.0.1",
   "description": "The best sorting algorithm in the world",
   "main": "index.js",
