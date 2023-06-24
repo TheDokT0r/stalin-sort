@@ -1,14 +1,18 @@
+//stalin sort
 const sort = (arr: any[]) => {
-    const newArr: any[] = [];
+    if (arr.length === 0) {
+        return [];
+    }
 
-    for (let i = 0; i < arr.length - 1; i++) {
-        if (arr[i] < arr[i + 1]) {
-            newArr.push(arr[i + 1]);
-            newArr.push(arr[i]);
+    let sorted = [arr[0]];
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] >= sorted[sorted.length - 1]) {
+            sorted.push(arr[i]);
         }
     }
 
-    return newArr;
+    return sorted;
 }
 
 export default sort;
